@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Body*/
+body{
+  font-family:sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header.navbar-container{
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display:inline-flex;
+  justify-content: space-around;
+  align-items:center;
+  z-index: 9999;
+}
+header.navbar-container .logo img{
+  width: 180px;
+}
+header.navbar-container .nav-list ul{
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+header.navbar-container .nav-list li{
+  list-style-type: none;
+}
+header.navbar-container .nav-list li a{
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 540;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+header.navbar-container .nav-list li:hover a{
+  background-color: #256c4e;
+  color: white;
+}
+/*utama*/
+main{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+/*Beranda*/
+#beranda{
+  padding: 2rem;
+  text-align: center;
+  background-color: #90dfb850;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+.isi-beranda{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.isi-beranda img{
+  width: 150px;
+  height: auto;
+}
+.logo{
+  margin-right: 15px;
+  width: 100px;
+}
+/*Kajian*/
+#kajian{
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.kajian-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.kajian-info img{
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+.kajian-info img.pop{
+  transform: scale(1.1);
+}
+#kajian h2{
+  margin-bottom: 1rem;
+}
+/*Donasi*/
+#donasi{
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.rekening-img{
+  width: 400px;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  border-radius: 10px;
+}
+/*Tanya Ustadz*/
+#tanya-ustadz{
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+form label{
+  margin: 0.5rem 0 0.2rem;
+}
+form input, form textarea{
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+form button{
+  background-color: #399962;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+form button:hover{
+  background-color: #256c4e;
+}
+/*Kontak*/
+#kontak{
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#kontak p{
+  margin: 0.5rem 0;
+}
+footer{
+  background-color: #399962;
+  color: white;
+  text-align: center;
+  padding:12px;
+  margin-top: 2rem;
+}
+
+/* Media Query buat layar di bawah 768px (Tablet dan Handphone) */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  nav ul li a {
+      text-align: center;
+      padding: 10px;
+  }
+  header {
+      padding: 10px;
+  }
+  .isi-beranda {
+    flex-direction: column;
+    align-items: center;
+  }
+  .isi-beranda img {
+    margin-bottom: 20px;
+  }
+  h1 {
+      font-size: 1.8em;
+  }
+  main {
+      width: 95%;
+      padding: 10px;
+  }
+}
+
+/* Media Query buat layar di bawah 480px (Handphone kecil) */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  nav ul li a {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  main {
+      width: 100%;
+      padding: 5px;
+  }
+}
